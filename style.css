@@ -42,3 +42,42 @@ th {
 body {
     background-color: #f0f8ff;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    flex: 1 1 45%;
+}
+
+.kaks-tulba {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: flex-start;  
+    gap: 20px;      
+}
+
+.kaks-tulba > .tulp {
+    flex: 1;                  
+    min-width: 300px;      
+    box-sizing: border-box;
+}
+
+
+#sisu {
+    height: calc(100vh - 120px); 
+    overflow: hidden;          
+}
+
+
+@media (max-width: 900px) {
+    .kaks-tulba {
+        flex-direction: column; 
+        height: auto;
+    }
+}
